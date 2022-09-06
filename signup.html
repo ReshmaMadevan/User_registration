@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup form</title>
+	<link rel="stylesheet" href="stylesignup.css" >
+
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="title">
+  	Signup form
+  </div>
+  <form id="form" action="#" >
+  
+    <div class="inputfield">
+     <label> first name </label>
+     <input type="text" class="input">
+    </div>
+
+    <div class="inputfield">
+     <label> last name </label>
+     <input type="text" class="input">
+    </div>
+
+    <div class="inputfield">
+     <label> password </label>
+     <input type="password" class="input">
+    </div>
+
+    <div class="inputfield">
+     <label> confirm password </label>
+     <input type="password" class="input">
+    </div>
+
+    <div class="inputfield">
+     <label>gender</label>
+     <div class="gender_select">
+      <select>
+       <option value="">select</option>
+       <option value="male">male</option>
+       <option value="female">female</option>
+       <option value="other">other</option>
+      </select>
+     </div>
+    </div>
+
+    <div class="inputbox">
+     <label> email address</label>
+     <input type="text" id="email" class="input" onkeydown="validate()">
+     
+     <span id="text"></span>
+    
+    </div>
+
+    <div class="inputnum">
+     <label> phone number</label>
+     <input type="text" id="number" class="input" onkeydown="validate2()">
+
+     <span id="text2"></span>
+     
+    </div>
+
+    <div class="inputfield">
+     <label> address</label>
+     <textarea class="textarea"></textarea>
+    </div>
+
+    <div class="inputfield">
+   	 <input type="submit" value="signup" class="btn">
+    </div>
+
+  
+</form>
+</div>	
+   
+<script type= "text/javascript">
+    function validate(){
+    	var form = document.getElementById("form");
+    	var email = document.getElementById("email").value;
+    	var text = document.getElementById("text")
+    	var pattern = /^\w+[\w-\.]*\@\w+((-\w+)|(\w*))\.[a-z]{2,4}$/;
+        
+
+
+    	if (email.match(pattern)){
+    		form.classList.add("valid");
+    		form.classList.remove("invalid");
+    		text.innerHTML = "email address is valid";
+    		text.style.color = "#00ff00"
+    	}
+    	else{
+    		form.classList.remove("valid");
+    		form.classList.add("invalid");
+    		text.innerHTML = "email address is invalid";
+    		text.style.color = "#ff0000"
+    	}
+    }
+
+    function validate2(){
+
+    	var form = document.getElementById("form");
+    	var number = document.getElementById("number").value;
+    	var text2 = document.getElementById("text2");
+        var pattern2 = /^\D?(\d{2})\D?\D?(\d{3})\D?(\d{4})$/;
+
+    	if (number.match(pattern2)){
+    		form.classList.add("valid");
+    		form.classList.remove("invalid");
+    		text2.innerHTML = "phone number is valid";
+    		text2.style.color = "#00ff00"
+    	}
+    	else{
+    		form.classList.remove("valid");
+    		form.classList.add("invalid");
+    		text2.innerHTML = "phone number is invalid";
+    		text2.style.color = "#ff0000"
+    	}
+    }
+    
+    
+  
+</script>
+
+</body>
+</html>

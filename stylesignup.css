@@ -1,0 +1,158 @@
+body{
+	background: url('./img4.jpg') no-repeat;
+	background-size: cover;
+	font-family: Sans-serif;
+}
+
+.wrapper{
+	max-width: 500px;
+	width: 100%;
+	background: white; opacity: 0.75;
+	margin: 20px auto;
+	padding: 30px;
+}
+
+.wrapper .title{
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 25px;
+	color: solid black;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+
+.wrapper  .inputfield{
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.wrapper  .inputfield label{
+	width: 200px;
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+.wrapper  .inputfield .input,
+.wrapper  .inputfield .textarea{
+	width: 100%;
+	font-size: 15px;
+	padding: 8px 10px;
+	border-radius: 3px;
+
+}
+
+.wrapper  .inputbox{
+	margin-bottom: 15px;
+	display: block;
+	align-items: center;
+}
+
+.wrapper  .inputbox label{
+	
+	width: 220px;
+	margin-right: 39px;
+	font-size: 16px;
+	
+}
+
+.wrapper  .inputbox .input,
+.wrapper  .inputbox .textarea{
+	
+	width: 330px;
+	font-size: 15px;
+	padding: 8px 10px;
+	border-radius: 3px;
+}
+
+.wrapper  .inputbox span{
+    display: block;
+	white-space: nowrap;
+	color: #000;
+	font-weight: 300;
+	font-style: italic;
+	padding: 5px;
+	margin-left: 135px;
+
+}
+
+
+
+#form .invalid .inputbox:before{
+	display: block;
+	content: '';
+	position: absolute;
+	right: 30px;
+	top: 5px;
+	width: 24px;
+	height: 24px;
+	
+	z-index: 1000;
+}
+
+.wrapper  .inputnum{
+	margin-bottom: 15px;
+	display: block;
+	align-items: center;
+}
+
+.wrapper  .inputnum label{
+	
+	width: 220px;
+	margin-right: 38px;
+	font-size: 16px;
+	
+}
+
+.wrapper  .inputnum .input,
+.wrapper  .inputnum .textarea{
+	
+	width: 329px;
+	font-size: 15px;
+	padding: 8px 10px;
+	border-radius: 3px;
+}
+
+.wrapper  .inputnum span{
+    display: block;
+	white-space: nowrap;
+	color: #000;
+	font-weight: 300;
+	font-style: italic;
+	padding: 5px;
+	margin-left: 135px;
+
+}
+
+
+
+#form .invalid .inputnum:before{
+	display: block;
+	content: '';
+	position: absolute;
+	right: 30px;
+	top: 5px;
+	width: 24px;
+	height: 24px;
+	
+	z-index: 1000;
+}
+ 
+
+.wrapper  .inputfield .gender_select{
+	position: relative;
+	width: 100%;
+	height: 35px;
+
+}
+
+.wrapper  .inputfield .gender_select select{
+	border: 2px solid black;
+	font-size: 16px;
+
+}
+
+
+
